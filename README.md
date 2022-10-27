@@ -34,4 +34,6 @@ After making changes to ```Caddyfile``` you need to restart caddy and wait for o
 
 ```systemctl restart caddy```
 
-6- now you should go to your cdn providor (i suggest arvancloud!) and add YOUR_DOMAIN to cdn providor. you should enable pass data over cdn. 
+6- now you should go to your cdn providor (i suggest arvancloud!) and add YOUR_DOMAIN to cdn providor. you should enable pass data over cdn. now you must set your VPS_IP for YOUR_DOMAIN.
+
+7- join Freedom! :)
