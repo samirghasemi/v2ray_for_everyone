@@ -28,7 +28,7 @@
             "settings": {
                 "clients": [
                     {
-                        "id": "",
+                        "id": "YOUR_UUID",
                         "level": 1,
                         "alterId": 64
                     }
@@ -37,7 +37,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/"
+                    "path": "/YOUR_PATH"
                 }
             }
         }
