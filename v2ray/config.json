@@ -1,0 +1,61 @@
+{
+    "log": {
+        "loglevel": "warning"
+    },
+    "policy": {
+        "levels": {
+            "0": {
+                "handshake": 5,
+                "connIdle": 300,
+                "uplinkOnly": 2,
+                "downlinkOnly": 5,
+                "statsUserUplink": false,
+                "statsUserDownlink": false,
+                "bufferSize": 10240
+            }
+        },
+        "system": {
+            "statsInboundUplink": false,
+            "statsInboundDownlink": false,
+            "statsOutboundUplink": false,
+            "statsOutboundDownlink": false
+        }
+    },
+    "inbounds": [
+        {
+            "port": 11002,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "",
+                        "level": 1,
+                        "alterId": 64
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/"
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ],
+    "dns": {
+        "servers": [
+            "https+local://1.1.1.1/dns-query",
+            "8.8.8.8",
+            "8.8.4.4",
+            "1.1.1.1",
+            "1.0.0.1",
+            "4.2.2.4",
+            "localhost"
+        ]
+    }
+}
